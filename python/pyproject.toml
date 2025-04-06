@@ -11,6 +11,10 @@ fastf1 = "^3.5.3"
 fastapi = "^0.115.12"
 uvicorn = "^0.34.0"
 pandas = "^2.2.3"
+tortoise-orm = "^0.24.2"
+asyncpg = "^0.30.0"
+pydantic-settings = "^2.8.1"
+yarl = "^1.19.0"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^4.2.0"
