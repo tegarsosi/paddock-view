@@ -1,0 +1,31 @@
+# Node / Next.js
+node_modules/
+.next/
+out/
+.env.local
+
+# Python
+__pycache__/
+.env
+
+# Go
+bin/
+*.exe
+*.test
+*.out
+
+# Docker
+*.log
+docker-compose.override.yml
+
+# macOS
+.DS_Store
+
+# General
+.env
+.env.*
+!.env.example
+
+# Coverage/testing
+coverage/
+*.coverprofile
