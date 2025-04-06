@@ -1,0 +1,28 @@
+from enum import Enum
+
+
+class GrandPrix(str, Enum):
+    AUSTRALIA = "Australia"
+    CHINA = "China"
+    JAPAN = "Japan"
+    BAHRAIN = "Bahrain"
+    SAUDI_ARABIA = "Saudi Arabia"
+    MIAMI = "Miami"
+    EMILIA_ROMAGNA = "Emilia-Romagna"
+    MONACO = "Monaco"
+    SPAIN = "Spain"
+    CANADA = "Canada"
+    AUSTRIAN = "Austria"
+    GREAT_BRITAIN = "Great Britain"
+    BELGIUM = "Belgium"
+    HUNGARY = "Hungary"
+    NETHERLANDS = "Netherlands"
+    ITALY = "Italy"
+    AZERBAIJAN = "Azerbaijan"
+    SINGAPORE = "Singapore"
+    UNITED_STATES = "United States"
+    MEXICO = "Mexico"
+    BRAZIL = "Brazil"
+    LAS_VEGAS = "Las Vegas"
+    QATAR = "Qatar"
+    ABU_DHABI = "Abu Dhabi"

@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "paddock-view"
+version = "0.1.0"
+description = ""
+authors = ["Tegar <tegar.sosi@gmail.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastf1 = "^3.5.3"
+fastapi = "^0.115.12"
+uvicorn = "^0.34.0"
+pandas = "^2.2.3"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.2.0"
+black = "^25.1.0"
+isort = "^6.0.1"
+flake8 = "^7.2.0"
+mypy = "^1.15.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
