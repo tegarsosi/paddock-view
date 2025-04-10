@@ -39,6 +39,6 @@ def get_driver_for_session(
 
 
 if __name__ == "__main__":
-    drivers = get_driver_for_session(2024, GrandPrix.AUSTRALIA, SessionType.R)
-    for driver in drivers:
-        print(f"{driver['number']} - {driver['name']} - {driver['team']} - {driver['status']}")
+    drivers = get_driver_for_session(2025, GrandPrix.JAPAN, SessionType.R)
+    for i in range(len(drivers)):
+        print(f"P{i + 1} {drivers[i]['number']} - {drivers[i]['name']} - {drivers[i]['team']} - {drivers[i]['status']}")

@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     def db_url(self) -> str:
         return str(
             URL.build(
-                scheme="postgresql",
+                scheme="postgres",
                 user=self.db_user,
                 password=self.db_password,
                 host=self.db_host,
