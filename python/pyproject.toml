@@ -3,7 +3,7 @@ name = "paddock-view"
 version = "0.1.0"
 description = ""
 authors = ["Tegar <tegar.sosi@gmail.com>"]
-package-mode = false
+package-mode = true
 
 [tool.poetry.dependencies]
 python = "^3.12"
