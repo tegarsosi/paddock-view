@@ -1,7 +1,7 @@
 import fastf1 as f1
 from typing import List, Dict, Any
 
-from python.enum.session_types import SessionType
+from app.enum.session_types import SessionType
 
 
 def get_drivers_for_session(
@@ -15,11 +15,16 @@ def get_drivers_for_session(
     drivers = []
     for number in session.drivers:
         driver_info = session.get_driver(number)
+        print(driver_info)
         drivers.append({
-            "position": int(driver_info["Position"]),
             "number": number,
             "abbreviation": driver_info["Abbreviation"],
             "full_name": driver_info["FullName"],
             "team_name": driver_info["TeamName"],
         })
+        if session_type == SessionType.R:
+            drivers.append({
+                "position": int(driver_info["Position"]),
+            })
+
     return drivers
