@@ -15,16 +15,16 @@ def get_drivers_for_session(
     drivers = []
     for number in session.drivers:
         driver_info = session.get_driver(number)
-        print(driver_info)
-        drivers.append({
+        driver_dict = {
             "number": number,
             "abbreviation": driver_info["Abbreviation"],
             "full_name": driver_info["FullName"],
             "team_name": driver_info["TeamName"],
-        })
-        if session_type == SessionType.R:
-            drivers.append({
-                "position": int(driver_info["Position"]),
-            })
+        }
+
+        if session_type == SessionType.R and "Position" in driver_info:
+            driver_dict["position"] = int(driver_info["Position"])
+
+        drivers.append(driver_dict)
 
     return drivers
